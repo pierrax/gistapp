@@ -63,3 +63,5 @@ group :test do
   gem 'database_cleaner', '1.0.1'
   gem 'ffaker'
 end
+
+gem 'rails_12factor', group: :production

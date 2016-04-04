@@ -1,0 +1,4 @@
+h1= "Listing Gists (#{@gists.count})"
+
+- @gists.each do |gist|
+  = render partial: 'gist', locals: {gist: gist}

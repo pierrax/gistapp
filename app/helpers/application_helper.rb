@@ -7,4 +7,8 @@ module ApplicationHelper
       when 'alert' then 'alert alert-warning'
     end
   end
+
+  def default_profile_pic_url
+    'http://www.isaca.org/SQTComm_Images/profile-default.png'
+  end
 end

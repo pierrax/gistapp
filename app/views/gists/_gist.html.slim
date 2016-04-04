@@ -1,0 +1,12 @@
+.panel.panel-default
+  .panel-heading
+    .row
+      .col-md-6
+        p.text-capitalize= gist.description
+        = gist.author
+        .small= gist.created_at
+      .col-md-6
+        .pull-right
+          = link_to 'Download', download_path(gist.id), class: 'btn btn-danger'
+  .panel-body
+    = gist.code

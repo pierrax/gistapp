@@ -5,6 +5,10 @@ nav.navbar.navbar-fixed-top
         = link_to 'GISTAPP', root_path
 
     ul.nav.navbar-nav.navbar-right
+      li
+        = link_to 'Search', search_path
+      li
+        = link_to 'Create Gist', new_gist_path
       li.dropdown
         - if user_signed_in?
           = link_to '#', { "data-toggle" => "dropdown" } do

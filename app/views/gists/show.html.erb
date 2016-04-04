@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gist.description %>
+</p>
+
+<p>
+  <strong>File name:</strong>
+  <%= @gist.file_name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @gist.code %>
+</p>
+
+<p>
+  <strong>Secret:</strong>
+  <%= @gist.secret %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @gist.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_gist_path(@gist) %> |
+<%= link_to 'Back', gists_path %>
